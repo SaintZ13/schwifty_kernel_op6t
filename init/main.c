@@ -638,8 +638,7 @@ asmlinkage __visible void __init start_kernel(void)
 	dbg_late_init();
 	vfs_caches_init();
 	signals_init();
-	/* rootfs populating might need page-writeback */
-	page_writeback_init();
+	seq_file_init();
 	proc_root_init();
 	nsfs_init();
 	cpuset_init();
