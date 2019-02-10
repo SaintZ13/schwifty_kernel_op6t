@@ -2945,7 +2945,7 @@ void f2fs_wait_on_block_writeback(struct f2fs_sb_info *sbi, block_t blkaddr)
 {
 	struct page *cpage;
 
-	if (!is_valid_data_blkaddr(sbi, blkaddr))
+	if (blkaddr == NEW_ADDR || blkaddr == NULL_ADDR)
 		return;
 
 	cpage = find_lock_page(META_MAPPING(sbi), blkaddr);
