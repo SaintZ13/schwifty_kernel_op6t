@@ -472,6 +472,7 @@ deps_config := \
 	sound/core/Kconfig \
 	sound/oss/dmasound/Kconfig \
 	sound/Kconfig \
+	drivers/video/klapse/Kconfig \
 	drivers/video/logo/Kconfig \
 	drivers/video/console/Kconfig \
 	drivers/video/adf/Kconfig \
