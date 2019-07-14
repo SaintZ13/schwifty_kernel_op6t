@@ -179,7 +179,6 @@ static struct platform_driver cam_ipe_driver = {
 		.name = "cam-ipe",
 		.owner = THIS_MODULE,
 		.of_match_table = cam_ipe_dt_match,
-		.suppress_bind_attrs = true,
 	},
 };
 
